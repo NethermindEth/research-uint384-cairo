@@ -118,7 +118,7 @@ end
 func uint384_and{bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(a : Uint384, b : Uint384) -> (
     res : Uint384
 ):
-    let (res) = uint384_lib.and(a, b)
+    let (res) = uint384_lib.bit_and(a, b)
     return (res)
 end
 
@@ -162,5 +162,15 @@ func uint384_reverse_endian{bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(num 
     res : Uint384
 ):
     let (res) = uint384_lib.reverse_endian(num)
+    return (res)
+end
+
+
+# Returns the negation of an integer.
+@view
+func uint384_neg{bitwise_ptr : BitwiseBuiltin*, range_check_ptr}(num : Uint384) -> (
+    res : Uint384
+):
+    let (res) = uint384_lib.neg(num)
     return (res)
 end

@@ -123,12 +123,12 @@ namespace uint384_lib:
 
         %{
             from starkware.python.math_utils import isqrt
-            
+
             def split(num: int, num_bits_shift: int, length: int):
                 a = []
                 for _ in range(length):
                     a.append( num & ((1 << num_bits_shift) - 1) )
-                    num = num >> num_bits_shift 
+                    num = num >> num_bits_shift
                 return tuple(a)
 
             def pack(z, num_bits_shift: int) -> int:
@@ -248,13 +248,13 @@ namespace uint384_lib:
                 a = []
                 for _ in range(length):
                     a.append( num & ((1 << num_bits_shift) - 1) )
-                    num = num >> num_bits_shift 
+                    num = num >> num_bits_shift
                 return tuple(a)
 
             def pack(z, num_bits_shift: int) -> int:
                 limbs = (z.d0, z.d1, z.d2)
                 return sum(limb << (num_bits_shift * i) for i, limb in enumerate(limbs))
-                
+
             a = pack(ids.a, num_bits_shift = 128)
             div = pack(ids.div, num_bits_shift = 128)
             quotient, remainder = divmod(a, div)
@@ -383,7 +383,7 @@ namespace uint384_lib:
     end
 
     # Computes the bitwise AND of 2 uint256 integers.
-    func and{range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(a : Uint384, b : Uint384) -> (
+    func bit_and{range_check_ptr, bitwise_ptr : BitwiseBuiltin*}(a : Uint384, b : Uint384) -> (
         res : Uint384
     ):
         let (d0) = bitwise_and(a.d0, b.d0)
