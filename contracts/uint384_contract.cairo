@@ -114,6 +114,7 @@ func uint384_xor{bitwise_ptr: BitwiseBuiltin*, range_check_ptr}(a: Uint384, b: U
 
 // Computes the bitwise AND of 2 uint384 integers.
 @view
+
 func uint384_and{bitwise_ptr: BitwiseBuiltin*, range_check_ptr}(a: Uint384, b: Uint384) -> (
     res: Uint384
 ) {
