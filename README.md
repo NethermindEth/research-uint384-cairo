@@ -1,5 +1,14 @@
 # uint384-cairo
 
+CAUTION: This repo is decrecated. A working uint384 library is contained in the repo `research-384bit-prime-field-arithmetic`(https://github.com/NethermindEth/research-384bit-prime-field-arithmetic-cairo). 
+
+For more context: originally `research-uint384` and `research-384bit-prime-field-arithmetic` were separate libraries. However the latter library makes extensive use of the former, and due to Cairo's non-importability of custom libraries, we ended up moving `research-uint384` inside `research-384bit-prime-field-arithmetic`. Subsequently we made tiny improvements to the `research-uint384` library version inside the field arithmetic library, and this caused the present repo to become deprecated.
+
+
+
+--------------
+
+
 Cairo implementation of basic operations between unsigned 384-bit integers. Some operations are also supported for signed 384-bit integers.  (Note that Cairo's native "integer" is of 251 bits)
 
 **NOTE**: All hints were whitelisted on Cairo v0.9.1 (20 Jul 2022). 
