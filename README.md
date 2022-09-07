@@ -2,7 +2,7 @@
 
 CAUTION: This repo is decrecated. A working uint384 library is contained in the repo `research-384bit-prime-field-arithmetic`(https://github.com/NethermindEth/research-384bit-prime-field-arithmetic-cairo). 
 
-For more context: originally `research-uint384` and `research-384bit-prime-field-arithmetic` were separate libraries. However the latter library makes extensive use of the former, and due to Cairo's non-importability of custom libraries, we ended up moving `research-uint384` inside `research-384bit-prime-field-arithmetic`. Subsequently we made tiny improvements to the `research-uint384` library version inside the field arithmetic library, and this caused the present repo to become deprecated.
+For more context: originally `research-uint384` and `research-384bit-prime-field-arithmetic` were separate libraries. However the latter library makes extensive use of the former, and due to Cairo's non-importability of custom libraries (as of July 2022), we ended up moving `research-uint384` inside `research-384bit-prime-field-arithmetic`. Subsequently we made tiny improvements to the `research-uint384` library version inside the field arithmetic library, and this caused the present repo to become deprecated.
 
 
 
