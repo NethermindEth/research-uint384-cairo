@@ -1,4 +1,4 @@
-# uint384-cairo
+# [Deprecated] uint384-cairo
 
 CAUTION: This repo is decrecated. A working uint384 library is contained in the repo `research-384bit-prime-field-arithmetic`(https://github.com/NethermindEth/research-384bit-prime-field-arithmetic-cairo). 
 
