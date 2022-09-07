@@ -2,7 +2,7 @@
 
 Cairo implementation of basic operations between unsigned 384-bit integers. Some operations are also supported for signed 384-bit integers.  (Note that Cairo's native "integer" is of 251 bits)
 
-**NOTE**: Hints are pending whitelisting by StarkWare
+**NOTE**: All hints were whitelisted on Cairo v0.9.1 (20 Jul 2022). 
 
 The library follows and extends Cairo's common library `uint256`. The usage and logic is almost the same as in `uint256`. All operations from `uint256` are implemented here for 384 bits. 
 
